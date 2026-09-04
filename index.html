@@ -8,27 +8,18 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-<header>
-    <h1>Calculadora de redução do ICMS</h1>
-</header>
-<main>
-    <div class="main-container">
-        <h3>Preencha os valores</h3>
+    <div class="container">
+        <h1>Calculadora de redução do ICMS</h1>
+        <h3>Preencha os valores abaixo</h3>
         <form id="values">
-            <h4>Valor de venda</h4>
+            <label for="valorVenda">Valor de venda</label>
             <input id="valorVenda" type="number">
-            <h4>Valor do ICMS</h4>
+            <label for="valorICMS">Valor do ICMS</label>
             <input id="valorICMS" type="number">
             <input type="submit" value="Calcular" id="calculate">
+            <input id="valorFinal" type="number" readonly>
         </form>
-        <input id="valorFinal" type="number">
+        <p>Importante! o valor do ICMS é reduzido em 70% do seu valor original.</p>
     </div>
-    <p>Importante! o valor do ICMS é reduzido em 70% do seu valor original.</p>
-</main>
-<footer>
-    <div class="footer-container">
-    <p>&copy; 2026</p>
-    </div>
-</footer>
 </body>
 </html>
