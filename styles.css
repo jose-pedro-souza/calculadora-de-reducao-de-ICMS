@@ -1,12 +1,30 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     min-height: 100vh;
-    background-image: linear-gradient(to top, #0F2747, #163A63);
+    padding: 20px;
+    background: linear-gradient(to top, #0F2747, #163A63);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container,
+.info-container {
+    width: 100%;
+    max-width: 500px;
+
+    background-color: #FFF;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,41 +32,24 @@ body {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    height: 400px;
-    background-color: #FFF;
-    border-radius: 1rem;
-    shadow: 0px 0px 10px 0px #000;
+    min-height: 480px;
 }
 
 .info-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    height: 160px;
+    min-height: 200px;
     margin-top: 30px;
-    background-color: #FFF;
-    border-radius: 1rem;
-    shadow: 0px 0px 10px 0px #000;
 }
 
 h1 {
+    margin: 20px 0;
     font-size: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
     font-weight: bold;
     color: #172033;
 }
 
 h3 {
-    font-size: 20px;
     margin-bottom: 10px;
+    font-size: 20px;
     color: #172033;
 }
 
@@ -60,17 +61,18 @@ form {
 }
 
 label {
-    font-size: 20px;
     padding: 10px;
+    font-size: 20px;
     color: #172033;
-
 }
 
 input {
+    width: 120px;
+    height: 30px;
+
     border: 1px solid #64748B;
     border-radius: 5px;
-    height: 30px;
-    width: 120px;
+
     font-size: 15px;
     text-align: center;
     color: #0F2747;
@@ -83,18 +85,32 @@ p {
     color: #64748B;
 }
 
-input[type="submit"] {
-    background-color: #2563EB;
-    color: #FFF;
+input[type="submit"],
+#cleanBtn {
     width: 120px;
     height: 40px;
-    font-size: 18px;
+    margin: 10px;
+
     border: none;
     border-radius: 5px;
-    margin: 10px;
+
+    font-size: 18px;
+    color: #FFF;
     cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #2563EB;
 }
 
 input[type="submit"]:hover {
     background-color: #1D4ED8;
+}
+
+#cleanBtn {
+    background-color: #8C8C8C;
+}
+
+#cleanBtn:hover {
+    background-color: #666;
 }
