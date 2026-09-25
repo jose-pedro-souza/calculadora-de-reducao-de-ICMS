@@ -14,6 +14,8 @@ const closeBtn = document.getElementById("closeBtn");
 function clean() {
     valorVenda.value = "";
     valorICMS.value = "";
+    valorFinal.value = "";
+    valorReduzido.value = "";
 }
 
 cleanBtn.addEventListener("click", clean);
