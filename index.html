@@ -18,13 +18,14 @@
             <input id="valorVenda" type="number" placeholder="R$ 0,00">
             <label for="valorICMS">Valor do ICMS:</label>
             <input id="valorICMS" type="number" placeholder="R$ 0,00">
-            <input type="submit" value="Calcular" id="calculate">
+            <button type="button" class="btn btn-success" id="calculate">Calcular</button>
             <input id="valorFinal" type="number" placeholder="R$ 0,00" readonly>
-            <button id="cleanBtn">Limpar</button>
+            <button type="button" class="btn btn-danger" id="cleanBtn">Limpar</button>
         </form>
-        <p>Importante! Preencher com o valor do ICMS efetivo.</p>
+        <p>Importante! Preencher com o ICMS efetivo.</p>
+        <button type="button" class="btn btn-outline-secondary" id="info">Detalhes</button>
     </div>
-    <div class="info-container">
+    <div class="hide" id="informations">
         <p>Informações sobre a redução do ICMS:</p>
         <ul>
             <li>O ICMS é reduzido em <strong>70%</strong> do seu valor original.</li>
@@ -32,6 +33,10 @@
         </ul>
         <label for="valorReduzido">Valor reduzido:</label>
         <input id="valorReduzido" type="number" placeholder="R$ 0,00" readonly>
+        <button type="button" class="btn btn-danger" id="closeBtn">Fechar</button>
+    </div>
+    <div class="footer-container">
+        <p>&copy; 2026</p>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
